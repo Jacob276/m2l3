@@ -1,3 +1,19 @@
+
+@keyframes color-change {
+    0% {
+      color: blue;
+    }
+  
+    50% {
+      color: red;
+    }
+  
+    100% {
+      color: blue;
+    }
+}
+
+
 body {
     font-family: Arial,  sans-serif; /* keluarga font */
     font-size: 11px; /* Ukuran font utama pada tag <p></p> */
@@ -5,7 +21,13 @@ body {
     color: #333333; /* Warna teks */ 
 }
 h1 {
-    color: #00a800; /* Warna tajuk (header)*/
+    color: hsl(120, 100%, 33%); /* Warna tajuk (header)*/
     font-size: 24px; /* Ukuran font tajuk (header) */
     font-family: Georgia, serif; /* Keluarga font yang digunakan di tajuk (header) */
+}
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+h1:hover{
+    animation:color-change 3s infinite
 }
